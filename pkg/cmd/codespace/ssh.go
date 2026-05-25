@@ -51,7 +51,7 @@ func newSSHCmd(app *App) *cobra.Command {
 
 	sshCmd := &cobra.Command{
 		Use:   "ssh [<flags>...] [-- <ssh-flags>...] [<command>]",
-		Short: "SSH into a codespace",
+		Short: "通过 SSH 连接 codespace",
 		Long: heredoc.Docf(`
 			The %[1]sssh%[1]s command is used to SSH into a codespace. In its simplest form, you can
 			run %[1]sgh cs ssh%[1]s, select a codespace interactively, and connect.
@@ -712,7 +712,7 @@ func newCpCmd(app *App) *cobra.Command {
 
 	cpCmd := &cobra.Command{
 		Use:   "cp [-e] [-r] [-- [<scp flags>...]] <sources>... <dest>",
-		Short: "Copy files between local and remote file systems",
+		Short: "在本地和远程文件系统之间复制文件",
 		Long: heredoc.Docf(`
 			The %[1]scp%[1]s command copies files between the local and remote file systems.
 

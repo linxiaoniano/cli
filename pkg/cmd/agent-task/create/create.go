@@ -58,7 +58,7 @@ func NewCmdCreate(f *cmdutil.Factory, runF func(*CreateOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "create [<task description>] [flags]",
-		Short: "Create an agent task (preview)",
+		Short: "创建 Agent 任务（预览）",
 		Args:  cobra.MaximumNArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			// Support -R/--repo override

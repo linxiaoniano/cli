@@ -55,7 +55,7 @@ func NewCmdPreview(f *cmdutil.Factory, telemetry ghtelemetry.CommandRecorder, ru
 
 	cmd := &cobra.Command{
 		Use:   "preview <repository> [<skill>]",
-		Short: "Preview a skill from a GitHub repository (preview)",
+		Short: "预览 GitHub 仓库中的技能（预览）",
 		Long: heredoc.Docf(`
 			Render a skill's %[1]sSKILL.md%[1]s content in the terminal. This fetches the
 			skill file from the repository and displays it using the configured

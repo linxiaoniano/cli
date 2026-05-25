@@ -42,7 +42,7 @@ const projectVisibilityPrivate = "PRIVATE"
 func NewCmdEdit(f *cmdutil.Factory, runF func(config editConfig) error) *cobra.Command {
 	opts := editOpts{}
 	editCmd := &cobra.Command{
-		Short: "Edit a project",
+		Short: "编辑项目",
 		Use:   "edit [<number>]",
 		Example: heredoc.Doc(`
 			# Edit the title of monalisa's project "1"

@@ -46,7 +46,7 @@ func NewCmdView(f *cmdutil.Factory, runF func(*ViewOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "view [<number> | <url> | <branch>]",
-		Short: "View a pull request",
+		Short: "查看 Pull Request",
 		Long: heredoc.Docf(`
 			Display the title, body, and other information about a pull request.
 

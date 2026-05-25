@@ -81,7 +81,7 @@ func NewCmdFork(f *cmdutil.Factory, runF func(*ForkOptions) error) *cobra.Comman
 			}
 			return nil
 		},
-		Short: "Create a fork of a repository",
+		Short: "创建仓库的 Fork",
 		Long: heredoc.Docf(`
 			Create a fork of a repository.
 

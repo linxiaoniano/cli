@@ -58,7 +58,7 @@ func NewCmdEdit(f *cmdutil.Factory, runF func(*EditOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "edit {<id> | <url>} [<filename>]",
-		Short: "Edit one of your gists",
+		Short: "编辑你的 Gist",
 		Example: heredoc.Doc(`
 			# Select a gist to edit interactively
 			$ gh gist edit

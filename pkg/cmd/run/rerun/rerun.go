@@ -40,7 +40,7 @@ func NewCmdRerun(f *cmdutil.Factory, runF func(*RerunOptions) error) *cobra.Comm
 
 	cmd := &cobra.Command{
 		Use:   "rerun [<run-id>]",
-		Short: "Rerun a run",
+		Short: "重新运行",
 		Long: heredoc.Docf(`
 			Rerun an entire run, only failed jobs, or a specific job from a run.
 

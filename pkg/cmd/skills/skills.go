@@ -16,12 +16,12 @@ import (
 func NewCmdSkills(f *cmdutil.Factory, telemetry ghtelemetry.CommandRecorder) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "skill <command>",
-		Short: "Install and manage agent skills (preview)",
+		Short: "安装和管理 Agent 技能（预览）",
 		Long: heredoc.Doc(`
-			Install and manage agent skills from GitHub repositories.
+			从 GitHub 仓库安装和管理 Agent 技能。
 
-			Working with agent skills in the GitHub CLI is in preview and
-			subject to change without notice.
+			在 GitHub CLI 中使用 Agent 技能处于预览阶段，
+			可能随时更改，恕不另行通知。
 		`),
 		Aliases: []string{"skills"},
 		GroupID: "core",

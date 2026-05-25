@@ -34,7 +34,7 @@ func NewCmdReopen(f *cmdutil.Factory, runF func(*ReopenOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "reopen {<number> | <url>}",
-		Short: "Reopen issue",
+		Short: "重新打开 Issue",
 		Args:  cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			issueNumber, baseRepo, err := shared.ParseIssueFromArg(args[0])

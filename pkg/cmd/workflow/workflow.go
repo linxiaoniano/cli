@@ -13,8 +13,8 @@ import (
 func NewCmdWorkflow(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:     "workflow <command>",
-		Short:   "View details about GitHub Actions workflows",
-		Long:    "List, view, and run workflows in GitHub Actions.",
+		Short:   "查看 GitHub Actions 工作流详情",
+		Long:    "列出、查看和运行 GitHub Actions 中的工作流。",
 		GroupID: "actions",
 	}
 	cmdutil.EnableRepoOverride(cmd, f)

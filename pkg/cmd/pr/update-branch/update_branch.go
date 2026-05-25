@@ -36,7 +36,7 @@ func NewCmdUpdateBranch(f *cmdutil.Factory, runF func(*UpdateBranchOptions) erro
 
 	cmd := &cobra.Command{
 		Use:   "update-branch [<number> | <url> | <branch>]",
-		Short: "Update a pull request branch",
+		Short: "更新 Pull Request 分支",
 		Long: heredoc.Docf(`
 			Update a pull request branch with latest changes of the base branch.
 

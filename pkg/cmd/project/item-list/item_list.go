@@ -34,7 +34,7 @@ type listConfig struct {
 func NewCmdList(f *cmdutil.Factory, runF func(config listConfig) error) *cobra.Command {
 	opts := listOpts{}
 	listCmd := &cobra.Command{
-		Short: "List the items in a project",
+		Short: "列出项目中的项",
 		Use:   "item-list [<number>]",
 		Long: heredoc.Doc(`
 			List the items in a project.

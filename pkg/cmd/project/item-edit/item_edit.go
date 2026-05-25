@@ -69,7 +69,7 @@ func NewCmdEditItem(f *cmdutil.Factory, runF func(config editItemConfig) error) 
 	opts := editItemOpts{}
 	editItemCmd := &cobra.Command{
 		Use:   "item-edit",
-		Short: "Edit an item in a project",
+		Short: "编辑项目中的项",
 		Long: heredoc.Docf(`
 			Edit either a draft issue or a project item. Both usages require the ID of the item to edit.
 

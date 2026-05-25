@@ -13,7 +13,7 @@ import (
 func NewCmdAutolink(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "autolink <command>",
-		Short: "Manage autolink references",
+		Short: "管理自动链接引用",
 		Long: heredoc.Docf(`
 			Autolinks link issues, pull requests, commit messages, and release descriptions to external third-party services.
 

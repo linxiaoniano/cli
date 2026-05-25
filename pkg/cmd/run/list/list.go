@@ -56,7 +56,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(*ListOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List recent workflow runs",
+		Short: "列出最近的工作流运行",
 		Long: heredoc.Docf(`
 			List recent workflow runs.
 

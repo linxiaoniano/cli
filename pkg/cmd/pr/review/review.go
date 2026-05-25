@@ -49,7 +49,7 @@ func NewCmdReview(f *cmdutil.Factory, runF func(*ReviewOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "review [<number> | <url> | <branch>]",
-		Short: "Add a review to a pull request",
+		Short: "为 Pull Request 添加审查",
 		Long: heredoc.Doc(`
 			Add a review to a pull request.
 

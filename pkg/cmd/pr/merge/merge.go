@@ -77,7 +77,7 @@ func NewCmdMerge(f *cmdutil.Factory, runF func(*MergeOptions) error) *cobra.Comm
 
 	cmd := &cobra.Command{
 		Use:   "merge [<number> | <url> | <branch>]",
-		Short: "Merge a pull request",
+		Short: "合并 Pull Request",
 		Long: heredoc.Docf(`
 			Merge a pull request on GitHub.
 

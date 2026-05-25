@@ -37,7 +37,7 @@ type createProjectDraftItemMutation struct {
 func NewCmdCreateItem(f *cmdutil.Factory, runF func(config createItemConfig) error) *cobra.Command {
 	opts := createItemOpts{}
 	createItemCmd := &cobra.Command{
-		Short: "Create a draft issue item in a project",
+		Short: "在项目中创建草稿 Issue 项",
 		Use:   "item-create [<number>]",
 		Example: heredoc.Doc(`
 			# Create a draft issue in the current user's project "1"

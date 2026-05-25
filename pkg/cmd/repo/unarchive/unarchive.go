@@ -36,7 +36,7 @@ func NewCmdUnarchive(f *cmdutil.Factory, runF func(*UnarchiveOptions) error) *co
 
 	cmd := &cobra.Command{
 		Use:   "unarchive [<repository>]",
-		Short: "Unarchive a repository",
+		Short: "取消归档仓库",
 		Long: heredoc.Doc(`Unarchive a GitHub repository.
 
 With no argument, unarchives the current repository.`),

@@ -41,7 +41,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(*ListOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List your gists",
+		Short: "列出你的 Gist",
 		Long: heredoc.Docf(`
 			List gists from your user account.
 

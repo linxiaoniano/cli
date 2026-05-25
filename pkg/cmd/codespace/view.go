@@ -27,7 +27,7 @@ func newViewCmd(app *App) *cobra.Command {
 
 	viewCmd := &cobra.Command{
 		Use:   "view",
-		Short: "View details about a codespace",
+		Short: "查看 codespace 详情",
 		Example: heredoc.Doc(`
 			# Select a codespace from a list of all codespaces you own
 			$ gh cs view

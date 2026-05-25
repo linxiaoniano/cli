@@ -8,8 +8,8 @@ import (
 func NewCmdLabel(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "label <command>",
-		Short: "Manage labels",
-		Long:  `Work with GitHub labels.`,
+		Short: "管理标签",
+		Long:  `处理 GitHub 标签。`,
 	}
 	cmdutil.EnableRepoOverride(cmd, f)
 

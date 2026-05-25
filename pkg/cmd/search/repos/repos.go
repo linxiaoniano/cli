@@ -37,7 +37,7 @@ func NewCmdRepos(f *cmdutil.Factory, runF func(*ReposOptions) error) *cobra.Comm
 
 	cmd := &cobra.Command{
 		Use:   "repos [<query>]",
-		Short: "Search for repositories",
+		Short: "搜索仓库",
 		Long: heredoc.Docf(`
 			Search for repositories on GitHub.
 

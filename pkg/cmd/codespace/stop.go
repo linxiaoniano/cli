@@ -21,7 +21,7 @@ func newStopCmd(app *App) *cobra.Command {
 
 	stopCmd := &cobra.Command{
 		Use:   "stop",
-		Short: "Stop a running codespace",
+		Short: "停止正在运行的 codespace",
 		Args:  noArgsConstraint,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if opts.orgName != "" && opts.selector.codespaceName != "" && opts.userName == "" {

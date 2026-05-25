@@ -36,7 +36,7 @@ func NewCmdCommits(f *cmdutil.Factory, runF func(*CommitsOptions) error) *cobra.
 
 	cmd := &cobra.Command{
 		Use:   "commits [<query>]",
-		Short: "Search for commits",
+		Short: "搜索提交",
 		Long: heredoc.Docf(`
 			Search for commits on GitHub.
 

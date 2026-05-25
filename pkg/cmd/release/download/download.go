@@ -48,7 +48,7 @@ func NewCmdDownload(f *cmdutil.Factory, runF func(*DownloadOptions) error) *cobr
 
 	cmd := &cobra.Command{
 		Use:   "download [<tag>]",
-		Short: "Download release assets",
+		Short: "下载 Release 资源",
 		Long: heredoc.Docf(`
 			Download assets from a GitHub release.
 

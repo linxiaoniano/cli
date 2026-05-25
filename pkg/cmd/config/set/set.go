@@ -29,7 +29,7 @@ func NewCmdConfigSet(f *cmdutil.Factory, runF func(*SetOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "set <key> <value>",
-		Short: "Update configuration with a value for the given key",
+		Short: "使用给定键的值更新配置",
 		Example: heredoc.Doc(`
 			$ gh config set editor vim
 			$ gh config set editor "code --wait"

@@ -31,7 +31,7 @@ func NewCmdView(f *cmdutil.Factory, runF func(*ViewOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "view <template>",
-		Short: "View an available repository gitignore template",
+		Short: "查看可用的仓库 gitignore 模板",
 		Long: heredoc.Docf(`
 			View an available repository %[1]s.gitignore%[1]s template.
 

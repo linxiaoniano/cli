@@ -56,7 +56,7 @@ func NewCmdRefresh(f *cmdutil.Factory, runF func(*RefreshOptions) error) *cobra.
 	cmd := &cobra.Command{
 		Use:   "refresh",
 		Args:  cobra.ExactArgs(0),
-		Short: "Refresh stored authentication credentials",
+		Short: "刷新存储的身份验证凭据",
 		Long: heredoc.Docf(`
 			Expand or fix the permission scopes for stored credentials for active account.
 

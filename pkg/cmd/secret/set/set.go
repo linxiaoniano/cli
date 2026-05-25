@@ -60,7 +60,7 @@ func NewCmdSet(f *cmdutil.Factory, runF func(*SetOptions) error) *cobra.Command 
 
 	cmd := &cobra.Command{
 		Use:   "set <secret-name>",
-		Short: "Create or update secrets",
+		Short: "创建或更新密钥",
 		Long: heredoc.Doc(`
 			Set a value for a secret on one of the following levels:
 			- repository (default): available to GitHub Actions runs, Agents sessions, or Dependabot in a repository

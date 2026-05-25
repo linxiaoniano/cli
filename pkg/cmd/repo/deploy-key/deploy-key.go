@@ -11,7 +11,7 @@ import (
 func NewCmdDeployKey(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "deploy-key <command>",
-		Short: "Manage deploy keys in a repository",
+		Short: "管理仓库中的部署密钥",
 	}
 
 	cmdutil.EnableRepoOverride(cmd, f)

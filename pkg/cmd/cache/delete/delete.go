@@ -36,7 +36,7 @@ func NewCmdDelete(f *cmdutil.Factory, runF func(*DeleteOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "delete [<cache-id> | <cache-key> | --all]",
-		Short: "Delete GitHub Actions caches",
+		Short: "删除 GitHub Actions 缓存",
 		Long: heredoc.Docf(`
 			Delete GitHub Actions caches.
 

@@ -30,7 +30,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(*ListOptions) error) *cobra.Comman
 	cmd := &cobra.Command{
 		Use:   "list",
 		Args:  cobra.MaximumNArgs(1),
-		Short: "List organizations for the authenticated user.",
+		Short: "列出已验证用户所属的组织。",
 		Example: heredoc.Doc(`
 			# List the first 30 organizations
 			$ gh org list

@@ -44,7 +44,7 @@ func NewCmdSync(f *cmdutil.Factory, runF func(*SyncOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "sync [<destination-repository>]",
-		Short: "Sync a repository",
+		Short: "同步仓库",
 		Long: heredoc.Docf(`
 			Sync destination repository from source repository. Syncing uses the default branch
 			of the source repository to update the matching branch on the destination

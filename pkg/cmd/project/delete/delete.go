@@ -35,7 +35,7 @@ type deleteProjectMutation struct {
 func NewCmdDelete(f *cmdutil.Factory, runF func(config deleteConfig) error) *cobra.Command {
 	opts := deleteOpts{}
 	deleteCmd := &cobra.Command{
-		Short: "Delete a project",
+		Short: "删除项目",
 		Use:   "delete [<number>]",
 		Example: heredoc.Doc(`
 			# Delete the current user's project "1"

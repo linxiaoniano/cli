@@ -37,7 +37,7 @@ func NewCmdUpload(f *cmdutil.Factory, runF func(*UploadOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "upload <tag> <files>...",
-		Short: "Upload assets to a release",
+		Short: "上传资源到 Release",
 		Long: heredoc.Docf(`
 			Upload asset files to a GitHub Release.
 

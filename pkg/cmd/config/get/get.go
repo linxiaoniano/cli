@@ -26,7 +26,7 @@ func NewCmdConfigGet(f *cmdutil.Factory, runF func(*GetOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "get <key>",
-		Short: "Print the value of a given configuration key",
+		Short: "打印指定配置键的值",
 		Example: heredoc.Doc(`
 			$ gh config get git_protocol
 		`),

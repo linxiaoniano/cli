@@ -40,7 +40,7 @@ type linkConfig struct {
 func NewCmdLink(f *cmdutil.Factory, runF func(config linkConfig) error) *cobra.Command {
 	opts := linkOpts{}
 	linkCmd := &cobra.Command{
-		Short: "Link a project to a repository or a team",
+		Short: "将项目链接到仓库或团队",
 		Use:   "link [<number>]",
 		Example: heredoc.Doc(`
 			# Link monalisa's project 1 to her repository "my_repo"

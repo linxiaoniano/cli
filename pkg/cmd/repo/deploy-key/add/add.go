@@ -31,7 +31,7 @@ func NewCmdAdd(f *cmdutil.Factory, runF func(*AddOptions) error) *cobra.Command 
 
 	cmd := &cobra.Command{
 		Use:   "add <key-file>",
-		Short: "Add a deploy key to a GitHub repository",
+		Short: "向 GitHub 仓库添加部署密钥",
 		Long: heredoc.Doc(`
 			Add a deploy key to a GitHub repository.
 

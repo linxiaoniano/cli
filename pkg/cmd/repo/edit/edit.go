@@ -108,7 +108,7 @@ func NewCmdEdit(f *cmdutil.Factory, runF func(options *EditOptions) error) *cobr
 
 	cmd := &cobra.Command{
 		Use:   "edit [<repository>]",
-		Short: "Edit repository settings",
+		Short: "编辑仓库设置",
 		Annotations: map[string]string{
 			"help:arguments": heredoc.Doc(`
 				A repository can be supplied as an argument in any of the following formats:

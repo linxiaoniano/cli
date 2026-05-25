@@ -18,18 +18,18 @@ import (
 func NewCmdRelease(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:     "release <command>",
-		Short:   "Manage releases",
+		Short:   "管理 Release",
 		GroupID: "core",
 	}
 
 	cmdutil.EnableRepoOverride(cmd, f)
 
-	cmdutil.AddGroup(cmd, "General commands",
+	cmdutil.AddGroup(cmd, "常用命令",
 		cmdList.NewCmdList(f, nil),
 		cmdCreate.NewCmdCreate(f, nil),
 	)
 
-	cmdutil.AddGroup(cmd, "Targeted commands",
+	cmdutil.AddGroup(cmd, "目标命令",
 		cmdView.NewCmdView(f, nil),
 		cmdUpdate.NewCmdEdit(f, nil),
 		cmdUpload.NewCmdUpload(f, nil),

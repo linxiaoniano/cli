@@ -28,7 +28,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(*ListOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List common repository licenses",
+		Short: "列出常见仓库许可证",
 		Long: heredoc.Doc(`
 			List common repository licenses.
 

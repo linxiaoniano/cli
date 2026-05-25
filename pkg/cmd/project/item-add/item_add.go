@@ -37,7 +37,7 @@ type addProjectItemMutation struct {
 func NewCmdAddItem(f *cmdutil.Factory, runF func(config addItemConfig) error) *cobra.Command {
 	opts := addItemOpts{}
 	addItemCmd := &cobra.Command{
-		Short: "Add a pull request or an issue to a project",
+		Short: "向项目添加 Pull Request 或 Issue",
 		Use:   "item-add [<number>]",
 		Example: heredoc.Doc(`
 			# Add an item to monalisa's project "1"

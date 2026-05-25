@@ -32,7 +32,7 @@ func NewCmdDelete(f *cmdutil.Factory, runF func(*DeleteOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "delete <key-id>",
-		Short: "Delete a GPG key from your GitHub account",
+		Short: "从 GitHub 账户删除 GPG 密钥",
 		Args:  cmdutil.ExactArgs(1, "cannot delete: key id required"),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			opts.KeyID = args[0]

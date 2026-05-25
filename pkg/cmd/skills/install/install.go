@@ -78,7 +78,7 @@ func NewCmdInstall(f *cmdutil.Factory, telemetry ghtelemetry.CommandRecorder, ru
 
 	cmd := &cobra.Command{
 		Use:   "install <repository> [<skill[@version]>] [flags]",
-		Short: "Install agent skills from a GitHub repository (preview)",
+		Short: "从 GitHub 仓库安装 Agent 技能（预览）",
 		Long: heredoc.Docf(`
 			Install agent skills from a GitHub repository or local directory into
 			your local environment. Skills are placed in a host-specific directory

@@ -34,7 +34,7 @@ func NewCmdSet(f *cmdutil.Factory, runF func(*SetOptions) error) *cobra.Command 
 
 	cmd := &cobra.Command{
 		Use:   "set <alias> <expansion>",
-		Short: "Create a shortcut for a gh command",
+		Short: "为 gh 命令创建快捷方式",
 		Long: heredoc.Docf(`
 			Define a word that will expand to a full gh command when invoked.
 

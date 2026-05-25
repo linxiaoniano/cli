@@ -36,7 +36,7 @@ func NewCmdCode(f *cmdutil.Factory, runF func(*CodeOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "code <query>",
-		Short: "Search within code",
+		Short: "搜索代码",
 		Long: heredoc.Docf(`
 			Search within code in GitHub repositories.
 

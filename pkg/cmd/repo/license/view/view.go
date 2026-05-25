@@ -35,7 +35,7 @@ func NewCmdView(f *cmdutil.Factory, runF func(*ViewOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "view {<license-key> | <spdx-id>}",
-		Short: "View a specific repository license",
+		Short: "查看特定仓库许可证",
 		Long: heredoc.Docf(`
 			View a specific repository license by license key or SPDX ID.
 

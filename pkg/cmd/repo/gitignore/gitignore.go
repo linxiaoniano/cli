@@ -10,7 +10,7 @@ import (
 func NewCmdGitIgnore(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "gitignore <command>",
-		Short: "List and view available repository gitignore templates",
+		Short: "列出和查看可用的仓库 gitignore 模板",
 	}
 
 	cmd.AddCommand(cmdList.NewCmdList(f, nil))

@@ -110,7 +110,7 @@ func NewCmdView(f *cmdutil.Factory, runF func(*ViewOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "view [<run-id>]",
-		Short: "View a summary of a workflow run",
+		Short: "查看工作流运行的摘要",
 		Long: heredoc.Docf(`
 			View a summary of a workflow run.
 

@@ -11,8 +11,8 @@ import (
 func NewCmdCache(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "cache <command>",
-		Short: "Manage GitHub Actions caches",
-		Long:  "Work with GitHub Actions caches.",
+		Short: "管理 GitHub Actions 缓存",
+		Long:  "处理 GitHub Actions 缓存。",
 		Example: heredoc.Doc(`
 			$ gh cache list
 			$ gh cache delete --all

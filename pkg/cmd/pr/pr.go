@@ -26,8 +26,8 @@ import (
 func NewCmdPR(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "pr <command>",
-		Short: "Manage pull requests",
-		Long:  "Work with GitHub pull requests.",
+		Short: "管理 Pull Request",
+		Long:  "处理 GitHub Pull Request。",
 		Example: heredoc.Doc(`
 			$ gh pr checkout 353
 			$ gh pr create --fill
@@ -35,10 +35,10 @@ func NewCmdPR(f *cmdutil.Factory) *cobra.Command {
 		`),
 		Annotations: map[string]string{
 			"help:arguments": heredoc.Doc(`
-				A pull request can be supplied as argument in any of the following formats:
-				- by number, e.g. "123";
-				- by URL, e.g. "https://github.com/OWNER/REPO/pull/123"; or
-				- by the name of its head branch, e.g. "patch-1" or "OWNER:patch-1".
+				Pull Request 可以通过以下任意格式作为参数提供：
+				- 按编号，例如 "123"；
+				- 按 URL，例如 "https://github.com/OWNER/REPO/pull/123"；或者
+				- 按 head 分支名称，例如 "patch-1" 或 "OWNER:patch-1"。
 			`),
 		},
 		GroupID: "core",
@@ -46,13 +46,13 @@ func NewCmdPR(f *cmdutil.Factory) *cobra.Command {
 
 	cmdutil.EnableRepoOverride(cmd, f)
 
-	cmdutil.AddGroup(cmd, "General commands",
+	cmdutil.AddGroup(cmd, "常用命令",
 		cmdList.NewCmdList(f, nil),
 		cmdCreate.NewCmdCreate(f, nil),
 		cmdStatus.NewCmdStatus(f, nil),
 	)
 
-	cmdutil.AddGroup(cmd, "Targeted commands",
+	cmdutil.AddGroup(cmd, "目标命令",
 		cmdView.NewCmdView(f, nil),
 		cmdDiff.NewCmdDiff(f, nil),
 		cmdCheckout.NewCmdCheckout(f, nil),

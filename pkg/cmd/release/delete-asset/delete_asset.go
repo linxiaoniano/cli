@@ -37,7 +37,7 @@ func NewCmdDeleteAsset(f *cmdutil.Factory, runF func(*DeleteAssetOptions) error)
 
 	cmd := &cobra.Command{
 		Use:   "delete-asset <tag> <asset-name>",
-		Short: "Delete an asset from a release",
+		Short: "从 Release 删除资源",
 		Args:  cobra.ExactArgs(2),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			// support `-R, --repo` override

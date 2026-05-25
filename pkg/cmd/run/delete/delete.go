@@ -37,7 +37,7 @@ func NewCmdDelete(f *cmdutil.Factory, runF func(*DeleteOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "delete [<run-id>]",
-		Short: "Delete a workflow run",
+		Short: "删除工作流运行",
 		Example: heredoc.Doc(`
 			# Interactively select a run to delete
 			$ gh run delete

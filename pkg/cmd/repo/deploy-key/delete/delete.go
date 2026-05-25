@@ -26,7 +26,7 @@ func NewCmdDelete(f *cmdutil.Factory, runF func(*DeleteOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "delete <key-id>",
-		Short: "Delete a deploy key from a GitHub repository",
+		Short: "从 GitHub 仓库删除部署密钥",
 		Args:  cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			opts.BaseRepo = f.BaseRepo

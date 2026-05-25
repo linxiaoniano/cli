@@ -30,7 +30,7 @@ func NewCmdReopen(f *cmdutil.Factory, runF func(*ReopenOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "reopen {<number> | <url> | <branch>}",
-		Short: "Reopen a pull request",
+		Short: "重新打开 Pull Request",
 		Args:  cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			opts.Finder = shared.NewFinder(f)

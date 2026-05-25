@@ -43,7 +43,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(*ListOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List variables",
+		Short: "列出变量",
 		Long: heredoc.Doc(`
 			List variables on one of the following levels:
 			- repository (default): available to GitHub Actions runs or Dependabot in a repository

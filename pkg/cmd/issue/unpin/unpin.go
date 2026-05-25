@@ -34,7 +34,7 @@ func NewCmdUnpin(f *cmdutil.Factory, runF func(*UnpinOptions) error) *cobra.Comm
 
 	cmd := &cobra.Command{
 		Use:   "unpin {<number> | <url>}",
-		Short: "Unpin an issue",
+		Short: "取消置顶 Issue",
 		Long: heredoc.Doc(`
 			Unpin an issue from a repository.
 

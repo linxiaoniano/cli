@@ -36,7 +36,7 @@ func NewCmdCreate(f *cmdutil.Factory, runF func(*createOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "create <keyPrefix> <urlTemplate>",
-		Short: "Create a new autolink reference",
+		Short: "创建新的自动链接引用",
 		Long: heredoc.Docf(`
 			Create a new autolink reference for a repository.
 

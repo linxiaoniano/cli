@@ -29,7 +29,7 @@ type listConfig struct {
 func NewCmdList(f *cmdutil.Factory, runF func(config listConfig) error) *cobra.Command {
 	opts := listOpts{}
 	listCmd := &cobra.Command{
-		Short: "List the fields in a project",
+		Short: "列出项目中的字段",
 		Use:   "field-list [<number>]",
 		Example: heredoc.Doc(`
 			# List fields in the current user's project "1"

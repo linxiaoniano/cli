@@ -47,7 +47,7 @@ func newDeleteCmd(app *App) *cobra.Command {
 
 	deleteCmd := &cobra.Command{
 		Use:   "delete",
-		Short: "Delete codespaces",
+		Short: "删除 codespace",
 		Long: heredoc.Doc(`
 			Delete codespaces based on selection criteria.
 

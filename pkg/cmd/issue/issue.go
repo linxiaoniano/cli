@@ -23,8 +23,8 @@ import (
 func NewCmdIssue(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "issue <command>",
-		Short: "Manage issues",
-		Long:  `Work with GitHub issues.`,
+		Short: "管理 Issue",
+		Long:  `处理 GitHub Issue。`,
 		Example: heredoc.Doc(`
 			$ gh issue list
 			$ gh issue create --label bug
@@ -32,9 +32,9 @@ func NewCmdIssue(f *cmdutil.Factory) *cobra.Command {
 		`),
 		Annotations: map[string]string{
 			"help:arguments": heredoc.Doc(`
-				An issue can be supplied as argument in any of the following formats:
-				- by number, e.g. "123"; or
-				- by URL, e.g. "https://github.com/OWNER/REPO/issues/123".
+				Issue 可以通过以下任意格式作为参数提供：
+				- 按编号，例如 "123"；或者
+				- 按 URL，例如 "https://github.com/OWNER/REPO/issues/123"。
 			`),
 		},
 		GroupID: "core",
@@ -42,13 +42,13 @@ func NewCmdIssue(f *cmdutil.Factory) *cobra.Command {
 
 	cmdutil.EnableRepoOverride(cmd, f)
 
-	cmdutil.AddGroup(cmd, "General commands",
+	cmdutil.AddGroup(cmd, "常用命令",
 		cmdList.NewCmdList(f, nil),
 		cmdCreate.NewCmdCreate(f, nil),
 		cmdStatus.NewCmdStatus(f, nil),
 	)
 
-	cmdutil.AddGroup(cmd, "Targeted commands",
+	cmdutil.AddGroup(cmd, "目标命令",
 		cmdView.NewCmdView(f, nil),
 		cmdComment.NewCmdComment(f, nil),
 		cmdClose.NewCmdClose(f, nil),

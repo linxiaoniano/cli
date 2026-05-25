@@ -31,7 +31,7 @@ type viewConfig struct {
 func NewCmdView(f *cmdutil.Factory, runF func(config viewConfig) error) *cobra.Command {
 	opts := viewOpts{}
 	viewCmd := &cobra.Command{
-		Short: "View a project",
+		Short: "查看项目",
 		Use:   "view [<number>]",
 		Example: heredoc.Doc(`
 			# View the current user's project "1"

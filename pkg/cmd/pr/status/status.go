@@ -51,7 +51,7 @@ func NewCmdStatus(f *cmdutil.Factory, runF func(*StatusOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "status",
-		Short: "Show status of relevant pull requests",
+		Short: "显示相关 Pull Request 的状态",
 		Long: heredoc.Docf(`
 			Show status of relevant pull requests.
 

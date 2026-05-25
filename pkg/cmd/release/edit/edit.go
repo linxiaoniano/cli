@@ -41,7 +41,7 @@ func NewCmdEdit(f *cmdutil.Factory, runF func(*EditOptions) error) *cobra.Comman
 		DisableFlagsInUseLine: true,
 
 		Use:   "edit <tag>",
-		Short: "Edit a release",
+		Short: "编辑 Release",
 		Example: heredoc.Doc(`
 			# Publish a release that was previously a draft
 			$ gh release edit v1.0 --draft=false

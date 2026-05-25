@@ -33,7 +33,7 @@ func newCmdEdit(f *cmdutil.Factory, runF func(*editOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "edit <name>",
-		Short: "Edit a label",
+		Short: "编辑标签",
 		Long: heredoc.Docf(`
 			Update a label on GitHub.
 

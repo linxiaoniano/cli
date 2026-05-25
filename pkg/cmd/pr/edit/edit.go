@@ -54,7 +54,7 @@ func NewCmdEdit(f *cmdutil.Factory, runF func(*EditOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "edit [<number> | <url> | <branch>]",
-		Short: "Edit a pull request",
+		Short: "编辑 Pull Request",
 		Long: heredoc.Docf(`
 			Edit a pull request.
 

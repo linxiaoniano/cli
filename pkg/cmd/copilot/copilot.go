@@ -47,7 +47,7 @@ func NewCmdCopilot(f *cmdutil.Factory, telemetry ghtelemetry.CommandRecorder, ru
 
 	cmd := &cobra.Command{
 		Use:   "copilot [flags] [args]",
-		Short: "Run the GitHub Copilot CLI (preview)",
+		Short: "运行 GitHub Copilot CLI（预览）",
 		Long: heredoc.Docf(`
 			Runs the GitHub Copilot CLI.
 

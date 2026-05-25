@@ -33,7 +33,7 @@ func NewCmdSendTelemetry(f *cmdutil.Factory) *cobra.Command {
 func newCmdSendTelemetry(f *cmdutil.Factory, runF func(*SendTelemetryOptions) error) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:    "send-telemetry",
-		Short:  "Send telemetry event to GitHub",
+		Short:  "向 GitHub 发送遥测事件",
 		Hidden: true,
 		Args:   cobra.NoArgs,
 		RunE: func(cmd *cobra.Command, args []string) error {

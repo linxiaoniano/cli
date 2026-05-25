@@ -39,7 +39,7 @@ type copyProjectMutation struct {
 func NewCmdCopy(f *cmdutil.Factory, runF func(config copyConfig) error) *cobra.Command {
 	opts := copyOpts{}
 	copyCmd := &cobra.Command{
-		Short: "Copy a project",
+		Short: "复制项目",
 		Use:   "copy [<number>]",
 		Example: heredoc.Doc(`
 			# Copy project "1" owned by monalisa to github

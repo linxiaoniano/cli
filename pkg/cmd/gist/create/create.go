@@ -49,7 +49,7 @@ func NewCmdCreate(f *cmdutil.Factory, runF func(*CreateOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "create [<filename>... | <pattern>... | -]",
-		Short: "Create a new gist",
+		Short: "创建新 Gist",
 		Long: heredoc.Docf(`
 			Create a new GitHub gist with given contents.
 

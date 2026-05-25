@@ -20,7 +20,7 @@ func newRebuildCmd(app *App) *cobra.Command {
 
 	rebuildCmd := &cobra.Command{
 		Use:   "rebuild",
-		Short: "Rebuild a codespace",
+		Short: "重建 codespace",
 		Long: heredoc.Doc(`
 			Rebuilding recreates your codespace.
 

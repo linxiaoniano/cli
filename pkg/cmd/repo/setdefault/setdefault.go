@@ -61,7 +61,7 @@ func NewCmdSetDefault(f *cmdutil.Factory, runF func(*SetDefaultOptions) error) *
 
 	cmd := &cobra.Command{
 		Use:   "set-default [<repository>]",
-		Short: "Configure default repository for this directory",
+		Short: "为此目录配置默认仓库",
 		Long:  explainer(),
 		Example: heredoc.Doc(`
 			# Interactively select a default repository

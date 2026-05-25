@@ -33,7 +33,7 @@ func NewCmdPin(f *cmdutil.Factory, runF func(*PinOptions) error) *cobra.Command 
 
 	cmd := &cobra.Command{
 		Use:   "pin {<number> | <url>}",
-		Short: "Pin an issue",
+		Short: "置顶 Issue",
 		Long: heredoc.Doc(`
 			Pin an issue to a repository.
 

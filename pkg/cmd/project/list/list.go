@@ -33,7 +33,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(config listConfig) error) *cobra.C
 	opts := listOpts{}
 	listCmd := &cobra.Command{
 		Use:   "list",
-		Short: "List the projects for an owner",
+		Short: "列出所有者的项目",
 		Example: heredoc.Doc(`
 			# List the current user's projects
 			$ gh project list

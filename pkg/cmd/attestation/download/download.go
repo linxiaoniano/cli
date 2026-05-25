@@ -21,7 +21,7 @@ func NewDownloadCmd(f *cmdutil.Factory, runF func(*Options) error) *cobra.Comman
 	downloadCmd := &cobra.Command{
 		Use:   "download [<file-path> | oci://<image-uri>] [--owner | --repo]",
 		Args:  cmdutil.ExactArgs(1, "must specify file path or container image URI, as well as one of --owner or --repo"),
-		Short: "Download an artifact's attestations for offline use",
+		Short: "下载工件的证明以供离线使用",
 		Long: heredoc.Docf(`
 			### NOTE: This feature is currently in public preview, and subject to change.
 

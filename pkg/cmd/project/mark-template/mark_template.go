@@ -41,7 +41,7 @@ type unmarkProjectTemplateMutation struct {
 func NewCmdMarkTemplate(f *cmdutil.Factory, runF func(config markTemplateConfig) error) *cobra.Command {
 	opts := markTemplateOpts{}
 	markTemplateCmd := &cobra.Command{
-		Short: "Mark a project as a template",
+		Short: "将项目标记为模板",
 		Use:   "mark-template [<number>]",
 		Example: heredoc.Doc(`
 			# Mark the github org's project "1" as a template

@@ -39,7 +39,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(*ListOptions) error) *cobra.Comman
 	}
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List rulesets for a repository or organization",
+		Short: "列出仓库或组织的规则集",
 		Long: heredoc.Docf(`
 			List GitHub rulesets for a repository or organization.
 

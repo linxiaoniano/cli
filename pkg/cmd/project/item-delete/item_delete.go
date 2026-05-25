@@ -36,7 +36,7 @@ type deleteProjectItemMutation struct {
 func NewCmdDeleteItem(f *cmdutil.Factory, runF func(config deleteItemConfig) error) *cobra.Command {
 	opts := deleteItemOpts{}
 	deleteItemCmd := &cobra.Command{
-		Short: "Delete an item from a project by ID",
+		Short: "按 ID 从项目删除项",
 		Use:   "item-delete [<number>]",
 		Example: heredoc.Doc(`
 			# Delete an item in the current user's project "1"

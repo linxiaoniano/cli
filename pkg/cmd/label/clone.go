@@ -33,7 +33,7 @@ func newCmdClone(f *cmdutil.Factory, runF func(*cloneOptions) error) *cobra.Comm
 
 	cmd := &cobra.Command{
 		Use:   "clone <source-repository>",
-		Short: "Clones labels from one repository to another",
+		Short: "将标签从一个仓库克隆到另一个",
 		Long: heredoc.Docf(`
 			Clones labels from a source repository to a destination repository on GitHub.
 			By default, the destination repository is the current repository.

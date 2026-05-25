@@ -61,15 +61,15 @@ func NewCmdBrowse(f *cmdutil.Factory, runF func(*BrowseOptions) error) *cobra.Co
 	}
 
 	cmd := &cobra.Command{
-		Short: "Open repositories, issues, pull requests, and more in the browser",
+		Short: "在浏览器中打开仓库、Issue、Pull Request 等",
 		Long: heredoc.Doc(`
-			Transition from the terminal to the web browser to view and interact with:
+			从终端切换到网页浏览器以查看和操作：
 
-			- Issues
-			- Pull requests
-			- Repository content
-			- Repository home page
-			- Repository settings
+			- Issue
+			- Pull Request
+			- 仓库内容
+			- 仓库主页
+			- 仓库设置
 		`),
 		Use:  "browse [<number> | <path> | <commit-sha>]",
 		Args: cobra.MaximumNArgs(1),
@@ -103,13 +103,13 @@ func NewCmdBrowse(f *cmdutil.Factory, runF func(*BrowseOptions) error) *cobra.Co
 		`),
 		Annotations: map[string]string{
 			"help:arguments": heredoc.Doc(`
-				A browser location can be specified using arguments in the following format:
-				- by number for issue or pull request, e.g. "123"; or
-				- by path for opening folders and files, e.g. "cmd/gh/main.go"; or
-				- by commit SHA
+				浏览器位置可以通过以下格式的参数指定：
+				- 按 Issue 或 Pull Request 编号，例如 "123"；或者
+				- 按路径打开文件夹和文件，例如 "cmd/gh/main.go"；或者
+				- 按提交 SHA
 			`),
 			"help:environment": heredoc.Doc(`
-				To configure a web browser other than the default, use the BROWSER environment variable.
+				要配置非默认的网页浏览器，请使用 BROWSER 环境变量。
 			`),
 		},
 		GroupID: "core",

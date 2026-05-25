@@ -33,7 +33,7 @@ func NewCmdView(f *cmdutil.Factory, runF func(*viewOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "view <id>",
-		Short: "View an autolink reference",
+		Short: "查看自动链接引用",
 		Long:  "View an autolink reference for a repository.",
 		Args:  cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {

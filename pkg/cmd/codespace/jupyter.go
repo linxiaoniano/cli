@@ -17,7 +17,7 @@ func newJupyterCmd(app *App) *cobra.Command {
 
 	jupyterCmd := &cobra.Command{
 		Use:   "jupyter",
-		Short: "Open a codespace in JupyterLab",
+		Short: "在 JupyterLab 中打开 codespace",
 		Args:  noArgsConstraint,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return app.Jupyter(cmd.Context(), selector)

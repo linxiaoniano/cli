@@ -40,7 +40,7 @@ type unlinkConfig struct {
 func NewCmdUnlink(f *cmdutil.Factory, runF func(config unlinkConfig) error) *cobra.Command {
 	opts := unlinkOpts{}
 	linkCmd := &cobra.Command{
-		Short: "Unlink a project from a repository or a team",
+		Short: "取消项目与仓库或团队的链接",
 		Use:   "unlink [<number>]",
 		Example: heredoc.Doc(`
 			# Unlink monalisa's project 1 from her repository "my_repo"

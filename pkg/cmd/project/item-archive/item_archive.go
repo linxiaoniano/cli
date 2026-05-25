@@ -43,7 +43,7 @@ type unarchiveProjectItemMutation struct {
 func NewCmdArchiveItem(f *cmdutil.Factory, runF func(config archiveItemConfig) error) *cobra.Command {
 	opts := archiveItemOpts{}
 	archiveItemCmd := &cobra.Command{
-		Short: "Archive an item in a project",
+		Short: "存档项目中的项目项",
 		Use:   "item-archive [<number>]",
 		Example: heredoc.Doc(`
 			# Archive an item in the current user's project "1"

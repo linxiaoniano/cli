@@ -40,7 +40,7 @@ func NewCmdVerifyAsset(f *cmdutil.Factory, runF func(*VerifyAssetConfig) error) 
 
 	cmd := &cobra.Command{
 		Use:   "verify-asset [<tag>] <file-path>",
-		Short: "Verify that a given asset originated from a release",
+		Short: "验证给定资源源自 Release",
 		Long: heredoc.Doc(`
 			Verify that a given asset file originated from a specific GitHub Release using cryptographically signed attestations.
 

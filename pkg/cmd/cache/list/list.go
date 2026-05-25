@@ -39,7 +39,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(*ListOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List GitHub Actions caches",
+		Short: "列出 GitHub Actions 缓存",
 		Example: heredoc.Doc(`
 			# List caches for current repository
 			$ gh cache list

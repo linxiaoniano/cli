@@ -43,7 +43,7 @@ func NewCmdView(f *cmdutil.Factory, runF func(*ViewOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "view [<ruleset-id>]",
-		Short: "View information about a ruleset",
+		Short: "查看规则集信息",
 		Long: heredoc.Docf(`
 			View information about a GitHub ruleset.
 

@@ -34,7 +34,7 @@ func NewCmdDelete(f *cmdutil.Factory, runF func(*DeleteOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "delete <variable-name>",
-		Short: "Delete variables",
+		Short: "删除变量",
 		Long: heredoc.Doc(`
 			Delete a variable on one of the following levels:
 			- repository (default): available to GitHub Actions runs or Dependabot in a repository

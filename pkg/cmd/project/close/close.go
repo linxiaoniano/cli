@@ -37,7 +37,7 @@ type updateProjectMutation struct {
 func NewCmdClose(f *cmdutil.Factory, runF func(config closeConfig) error) *cobra.Command {
 	opts := closeOpts{}
 	closeCmd := &cobra.Command{
-		Short: "Close a project",
+		Short: "关闭项目",
 		Use:   "close [<number>]",
 		Example: heredoc.Doc(`
 			# Close project "1" owned by monalisa

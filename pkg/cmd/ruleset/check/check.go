@@ -42,7 +42,7 @@ func NewCmdCheck(f *cmdutil.Factory, runF func(*CheckOptions) error) *cobra.Comm
 	}
 	cmd := &cobra.Command{
 		Use:   "check [<branch>]",
-		Short: "View rules that would apply to a given branch",
+		Short: "查看将应用于给定分支的规则",
 		Long: heredoc.Docf(`
 			View information about GitHub rules that apply to a given branch.
 

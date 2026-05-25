@@ -24,7 +24,7 @@ func NewCmdConfigClearCache(f *cmdutil.Factory, runF func(*ClearCacheOptions) er
 
 	cmd := &cobra.Command{
 		Use:   "clear-cache",
-		Short: "Clear the cli cache",
+		Short: "清除 CLI 缓存",
 		Example: heredoc.Doc(`
 			# Clear the cli cache
 			$ gh config clear-cache

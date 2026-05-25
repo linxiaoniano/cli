@@ -36,7 +36,7 @@ func NewCmdExtension(f *cmdutil.Factory) *cobra.Command {
 
 	extCmd := cobra.Command{
 		Use:   "extension",
-		Short: "Manage gh extensions",
+		Short: "管理 gh 扩展",
 		Long: heredoc.Docf(`
 			GitHub CLI extensions are repositories that provide additional gh commands.
 
@@ -95,7 +95,7 @@ func NewCmdExtension(f *cmdutil.Factory) *cobra.Command {
 
 			cmd := &cobra.Command{
 				Use:   "search [<query>]",
-				Short: "Search extensions to the GitHub CLI",
+				Short: "搜索 GitHub CLI 扩展",
 				Long: heredoc.Docf(`
 					Search for gh extensions.
 
@@ -262,7 +262,7 @@ func NewCmdExtension(f *cmdutil.Factory) *cobra.Command {
 		}(),
 		&cobra.Command{
 			Use:     "list",
-			Short:   "List installed extension commands",
+			Short:   "列出已安装的扩展命令",
 			Aliases: []string{"ls"},
 			Args:    cobra.NoArgs,
 			RunE: func(cmd *cobra.Command, args []string) error {
@@ -300,7 +300,7 @@ func NewCmdExtension(f *cmdutil.Factory) *cobra.Command {
 			var pinFlag string
 			cmd := &cobra.Command{
 				Use:   "install <repository>",
-				Short: "Install a gh extension from a repository",
+				Short: "从仓库安装 gh 扩展",
 				Long: heredoc.Docf(`
 					Install a GitHub CLI extension from a GitHub or local repository.
 
@@ -428,7 +428,7 @@ func NewCmdExtension(f *cmdutil.Factory) *cobra.Command {
 			var flagDryRun bool
 			cmd := &cobra.Command{
 				Use:   "upgrade {<name> | --all}",
-				Short: "Upgrade installed extensions",
+				Short: "升级已安装的扩展",
 				Args: func(cmd *cobra.Command, args []string) error {
 					if len(args) == 0 && !flagAll {
 						return cmdutil.FlagErrorf("specify an extension to upgrade or `--all`")
@@ -459,7 +459,7 @@ func NewCmdExtension(f *cmdutil.Factory) *cobra.Command {
 		}(),
 		&cobra.Command{
 			Use:   "remove <name>",
-			Short: "Remove an installed extension",
+			Short: "移除已安装的扩展",
 			Args:  cobra.ExactArgs(1),
 			RunE: func(cmd *cobra.Command, args []string) error {
 				extName := normalizeExtensionSelector(args[0])
@@ -478,7 +478,7 @@ func NewCmdExtension(f *cmdutil.Factory) *cobra.Command {
 			var singleColumn bool
 			cmd := &cobra.Command{
 				Use:   "browse",
-				Short: "Enter a UI for browsing, adding, and removing extensions",
+				Short: "进入浏览、添加和移除扩展的界面",
 				Long: heredoc.Docf(`
 					This command will take over your terminal and run a fully interactive
 					interface for browsing, adding, and removing gh extensions. A terminal
@@ -540,7 +540,7 @@ func NewCmdExtension(f *cmdutil.Factory) *cobra.Command {
 		}(),
 		&cobra.Command{
 			Use:   "exec <name> [args]",
-			Short: "Execute an installed extension",
+			Short: "执行已安装的扩展",
 			Long: heredoc.Docf(`
 				Execute an extension using the short name. For example, if the extension repository is
 				%[1]sowner/gh-extension%[1]s, you should pass %[1]sextension%[1]s. You can use this command when
@@ -578,7 +578,7 @@ func NewCmdExtension(f *cmdutil.Factory) *cobra.Command {
 			var flagType string
 			cmd := &cobra.Command{
 				Use:   "create [<name>]",
-				Short: "Create a new extension",
+				Short: "创建新扩展",
 				Example: heredoc.Doc(`
 					# Use interactively
 					$ gh extension create

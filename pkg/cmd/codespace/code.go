@@ -17,7 +17,7 @@ func newCodeCmd(app *App) *cobra.Command {
 
 	codeCmd := &cobra.Command{
 		Use:   "code",
-		Short: "Open a codespace in Visual Studio Code",
+		Short: "在 Visual Studio Code 中打开 codespace",
 		Args:  noArgsConstraint,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return app.VSCode(cmd.Context(), selector, useInsiders, useWeb)

@@ -66,7 +66,7 @@ func NewCmdPrompter(f *cmdutil.Factory, runF func(*prompterOptions) error) *cobr
 
 	cmd := &cobra.Command{
 		Use:   "prompter [prompt type]",
-		Short: "Execute a test program to preview the prompter",
+		Short: "执行测试程序以预览提示器",
 		Long: heredoc.Doc(`
 			Execute a test program to preview the prompter.
 			Without an argument, all prompts will be run.

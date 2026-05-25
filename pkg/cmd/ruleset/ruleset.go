@@ -12,10 +12,10 @@ import (
 func NewCmdRuleset(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "ruleset <command>",
-		Short: "View info about repo rulesets",
+		Short: "查看仓库规则集信息",
 		Long: heredoc.Doc(`
-			Repository rulesets are a way to define a set of rules that apply to a repository.
-			These commands allow you to view information about them.
+			仓库规则集是一种定义应用于仓库的一组规则的方式。
+			这些命令允许你查看相关信息。
 		`),
 		Aliases: []string{"rs"},
 		Example: heredoc.Doc(`

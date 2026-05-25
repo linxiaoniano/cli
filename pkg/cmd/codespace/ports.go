@@ -32,7 +32,7 @@ func newPortsCmd(app *App) *cobra.Command {
 
 	portsCmd := &cobra.Command{
 		Use:   "ports",
-		Short: "List ports in a codespace",
+		Short: "列出 codespace 中的端口",
 		Args:  noArgsConstraint,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return app.ListPorts(cmd.Context(), selector, exporter)
@@ -219,7 +219,7 @@ func getDevContainer(ctx context.Context, apiClient apiClient, codespace *api.Co
 func newPortsVisibilityCmd(app *App, selector *CodespaceSelector) *cobra.Command {
 	return &cobra.Command{
 		Use:   "visibility <port>:{public|private|org}...",
-		Short: "Change the visibility of the forwarded port",
+		Short: "更改转发端口的可见性",
 		Example: heredoc.Doc(`
 			$ gh codespace ports visibility 80:org 3000:private 8000:public
 		`),
@@ -301,7 +301,7 @@ func (a *App) parsePortVisibilities(args []string) ([]portVisibility, error) {
 func newPortsForwardCmd(app *App, selector *CodespaceSelector) *cobra.Command {
 	return &cobra.Command{
 		Use:   "forward <remote-port>:<local-port>...",
-		Short: "Forward ports",
+		Short: "转发端口",
 		Args:  cobra.MinimumNArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return app.ForwardPorts(cmd.Context(), selector, args)

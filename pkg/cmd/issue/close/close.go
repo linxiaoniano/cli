@@ -34,7 +34,7 @@ func NewCmdClose(f *cmdutil.Factory, runF func(*CloseOptions) error) *cobra.Comm
 
 	cmd := &cobra.Command{
 		Use:   "close {<number> | <url>}",
-		Short: "Close issue",
+		Short: "关闭 Issue",
 		Example: heredoc.Doc(`
 			# Close issue
 			$ gh issue close 123

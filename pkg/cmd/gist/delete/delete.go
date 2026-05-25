@@ -36,7 +36,7 @@ func NewCmdDelete(f *cmdutil.Factory, runF func(*DeleteOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "delete {<id> | <url>}",
-		Short: "Delete a gist",
+		Short: "删除 Gist",
 		Long: heredoc.Docf(`
 			Delete a GitHub gist.
 

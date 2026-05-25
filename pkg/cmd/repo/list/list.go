@@ -55,7 +55,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(*ListOptions) error) *cobra.Comman
 	cmd := &cobra.Command{
 		Use:   "list [<owner>]",
 		Args:  cobra.MaximumNArgs(1),
-		Short: "List repositories owned by user or organization",
+		Short: "列出用户或组织拥有的仓库",
 		Long: heredoc.Docf(`
 			List repositories owned by a user or organization.
 

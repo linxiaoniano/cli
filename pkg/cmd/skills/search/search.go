@@ -76,7 +76,7 @@ func NewCmdSearch(f *cmdutil.Factory, telemetry ghtelemetry.CommandRecorder, run
 
 	cmd := &cobra.Command{
 		Use:   "search <query> [flags]",
-		Short: "Search for skills across GitHub (preview)",
+		Short: "在 GitHub 中搜索技能（预览）",
 		Long: heredoc.Docf(`
 			Search across all public GitHub repositories for skills matching a keyword.
 

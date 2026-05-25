@@ -85,7 +85,7 @@ func newCreateCmd(app *App) *cobra.Command {
 
 	createCmd := &cobra.Command{
 		Use:   "create",
-		Short: "Create a codespace",
+		Short: "创建 codespace",
 		Args:  noArgsConstraint,
 		PreRunE: func(cmd *cobra.Command, args []string) error {
 			return cmdutil.MutuallyExclusive(

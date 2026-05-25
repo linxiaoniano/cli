@@ -74,7 +74,7 @@ func NewCmdUpdate(f *cmdutil.Factory, runF func(*UpdateOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "update [<skill>...] [flags]",
-		Short: "Update installed skills to their latest versions (preview)",
+		Short: "将已安装技能更新到最新版本（预览）",
 		Long: heredoc.Docf(`
 			Checks installed skills for available updates by comparing the local
 			tree SHA (from %[1]sSKILL.md%[1]s frontmatter) against the remote repository.

@@ -79,7 +79,7 @@ func NewCmdCreate(f *cmdutil.Factory, runF func(*CreateOptions) error) *cobra.Co
 		DisableFlagsInUseLine: true,
 
 		Use:   "create [<tag>] [<filename>... | <pattern>...]",
-		Short: "Create a new release",
+		Short: "创建新 Release",
 		Long: heredoc.Docf(`
 			Create a new GitHub Release for a repository.
 

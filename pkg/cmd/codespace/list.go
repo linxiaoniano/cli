@@ -26,7 +26,7 @@ func newListCmd(app *App) *cobra.Command {
 
 	listCmd := &cobra.Command{
 		Use:   "list",
-		Short: "List codespaces",
+		Short: "列出 codespace",
 		Long: heredoc.Doc(`
 			List codespaces of the authenticated user.
 

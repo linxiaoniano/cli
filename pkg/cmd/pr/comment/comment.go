@@ -24,7 +24,7 @@ func NewCmdComment(f *cmdutil.Factory, runF func(*shared.CommentableOptions) err
 
 	cmd := &cobra.Command{
 		Use:   "comment [<number> | <url> | <branch>]",
-		Short: "Add a comment to a pull request",
+		Short: "添加评论到 Pull Request",
 		Long: heredoc.Doc(`
 			Add a comment to a GitHub pull request.
 

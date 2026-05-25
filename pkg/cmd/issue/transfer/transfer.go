@@ -33,7 +33,7 @@ func NewCmdTransfer(f *cmdutil.Factory, runF func(*TransferOptions) error) *cobr
 
 	cmd := &cobra.Command{
 		Use:   "transfer {<number> | <url>} <destination-repo>",
-		Short: "Transfer issue to another repository",
+		Short: "将 Issue 转移到另一个仓库",
 		Args:  cmdutil.ExactArgs(2, "issue and destination repository are required"),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			issueNumber, baseRepo, err := shared.ParseIssueFromArg(args[0])

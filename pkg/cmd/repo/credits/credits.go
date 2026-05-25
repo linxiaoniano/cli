@@ -40,7 +40,7 @@ func NewCmdCredits(f *cmdutil.Factory, runF func(*CreditsOptions) error) *cobra.
 
 	cmd := &cobra.Command{
 		Use:   "credits",
-		Short: "View credits for this tool",
+		Short: "查看此工具的致谢",
 		Long:  `View animated credits for gh, the tool you are currently using :)`,
 		Example: heredoc.Doc(`
 			# See a credits animation for this project
@@ -77,7 +77,7 @@ func NewCmdRepoCredits(f *cmdutil.Factory, runF func(*CreditsOptions) error) *co
 
 	cmd := &cobra.Command{
 		Use:   "credits [<repository>]",
-		Short: "View credits for a repository",
+		Short: "查看仓库的致谢",
 		Example: heredoc.Doc(`
 			# View credits for the current repository
 			$ gh repo credits

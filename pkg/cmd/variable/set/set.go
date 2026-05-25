@@ -50,7 +50,7 @@ func NewCmdSet(f *cmdutil.Factory, runF func(*SetOptions) error) *cobra.Command 
 
 	cmd := &cobra.Command{
 		Use:   "set <variable-name>",
-		Short: "Create or update variables",
+		Short: "创建或更新变量",
 		Long: heredoc.Doc(`
 			Set a value for a variable on one of the following levels:
 			- repository (default): available to GitHub Actions runs or Dependabot in a repository

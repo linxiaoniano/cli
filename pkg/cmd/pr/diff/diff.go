@@ -52,7 +52,7 @@ func NewCmdDiff(f *cmdutil.Factory, runF func(*DiffOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "diff [<number> | <url> | <branch>]",
-		Short: "View changes in a pull request",
+		Short: "查看 Pull Request 中的变更",
 		Long: heredoc.Docf(`
 			View changes in a pull request.
 

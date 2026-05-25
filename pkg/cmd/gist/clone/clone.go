@@ -40,7 +40,7 @@ func NewCmdClone(f *cmdutil.Factory, runF func(*CloneOptions) error) *cobra.Comm
 
 		Use:   "clone <gist> [<directory>] [-- <gitflags>...]",
 		Args:  cmdutil.MinimumArgs(1, "cannot clone: gist argument required"),
-		Short: "Clone a gist locally",
+		Short: "在本地克隆 Gist",
 		Long: heredoc.Docf(`
 			Clone a GitHub gist locally.
 

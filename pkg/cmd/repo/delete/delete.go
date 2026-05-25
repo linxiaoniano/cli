@@ -38,7 +38,7 @@ func NewCmdDelete(f *cmdutil.Factory, runF func(*DeleteOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "delete [<repository>]",
-		Short: "Delete a repository",
+		Short: "删除仓库",
 		Long: heredoc.Docf(`
 			Delete a GitHub repository.
 

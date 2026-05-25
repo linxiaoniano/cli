@@ -48,7 +48,7 @@ func NewCmdStatus(f *cmdutil.Factory, runF func(*StatusOptions) error) *cobra.Co
 	opts.IO = f.IOStreams
 	cmd := &cobra.Command{
 		Use:   "status",
-		Short: "Print information about relevant issues, pull requests, and notifications across repositories",
+		Short: "显示相关 Issue、Pull Request 和跨仓库通知的信息",
 		Long: heredoc.Doc(`
 			The status command prints information about your work on GitHub across all the repositories you're subscribed to, including:
 

@@ -208,7 +208,7 @@ func NewCmdCreate(f *cmdutil.Factory, runF func(*CreateOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "create",
-		Short: "Create a pull request",
+		Short: "创建 Pull Request",
 		Long: heredoc.Docf(`
 			Create a pull request on GitHub.
 

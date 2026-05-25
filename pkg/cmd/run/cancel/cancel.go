@@ -35,7 +35,7 @@ func NewCmdCancel(f *cmdutil.Factory, runF func(*CancelOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "cancel [<run-id>]",
-		Short: "Cancel a workflow run",
+		Short: "取消工作流运行",
 		Args:  cobra.MaximumNArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			// support `-R, --repo` override

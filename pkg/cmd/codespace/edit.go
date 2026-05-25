@@ -21,7 +21,7 @@ func newEditCmd(app *App) *cobra.Command {
 
 	editCmd := &cobra.Command{
 		Use:   "edit",
-		Short: "Edit a codespace",
+		Short: "编辑 codespace",
 		Args:  noArgsConstraint,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if opts.displayName == "" && opts.machine == "" {

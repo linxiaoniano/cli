@@ -43,7 +43,7 @@ func NewCmdView(f *cmdutil.Factory, runF func(*ViewOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "view [<tag>]",
-		Short: "View information about a release",
+		Short: "查看 Release 信息",
 		Long: heredoc.Doc(`
 			View information about a GitHub Release.
 

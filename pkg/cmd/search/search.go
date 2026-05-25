@@ -15,7 +15,7 @@ import (
 func NewCmdSearch(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "search <command>",
-		Short: "Search for repositories, issues, and pull requests",
+		Short: "搜索仓库、Issue 和 Pull Request",
 		Long: heredoc.Docf(`
 			Search across all of GitHub.
 

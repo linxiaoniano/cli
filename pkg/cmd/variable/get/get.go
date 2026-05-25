@@ -37,7 +37,7 @@ func NewCmdGet(f *cmdutil.Factory, runF func(*GetOptions) error) *cobra.Command 
 
 	cmd := &cobra.Command{
 		Use:   "get <variable-name>",
-		Short: "Get variables",
+		Short: "获取变量",
 		Long: heredoc.Doc(`
 			Get a variable on one of the following levels:
 			- repository (default): available to GitHub Actions runs or Dependabot in a repository

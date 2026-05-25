@@ -11,8 +11,8 @@ import (
 func NewCmdGPGKey(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "gpg-key <command>",
-		Short: "Manage GPG keys",
-		Long:  "Manage GPG keys registered with your GitHub account.",
+		Short: "管理 GPG 密钥",
+		Long:  "管理已在 GitHub 账户中注册的 GPG 密钥。",
 	}
 
 	cmd.AddCommand(cmdAdd.NewCmdAdd(f, nil))

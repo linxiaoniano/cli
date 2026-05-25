@@ -35,7 +35,7 @@ func NewTrustedRootCmd(f *cmdutil.Factory, runF func(*Options) error) *cobra.Com
 	trustedRootCmd := cobra.Command{
 		Use:   "trusted-root [--tuf-url <url> --tuf-root <file-path>] [--verify-only]",
 		Args:  cobra.ExactArgs(0),
-		Short: "Output trusted_root.jsonl contents, likely for offline verification",
+		Short: "输出 trusted_root.jsonl 内容，通常用于离线验证",
 		Long: heredoc.Docf(`
 			Output contents for a trusted_root.jsonl file, likely for offline verification.
 

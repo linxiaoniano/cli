@@ -19,20 +19,20 @@ func NewCmdAgentTask(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:     "agent-task <command>",
 		Aliases: []string{"agent-tasks", "agent", "agents"},
-		Short:   "Work with agent tasks (preview)",
+		Short:   "处理 Agent 任务（预览）",
 		Long: heredoc.Doc(`
-			Working with agent tasks in the GitHub CLI is in preview and
-			subject to change without notice.
+			在 GitHub CLI 中使用 Agent 任务处于预览阶段，
+			可能随时更改，恕不另行通知。
 		`),
 		Annotations: map[string]string{
 			"help:arguments": heredoc.Doc(`
-				A task can be identified as argument in any of the following formats:
-				- by pull request number, e.g. "123"; or
-				- by session ID, e.g. "12345abc-12345-12345-12345-12345abc"; or
-				- by URL, e.g. "https://github.com/OWNER/REPO/pull/123/agent-sessions/12345abc-12345-12345-12345-12345abc";
+				任务可以通过以下任意格式作为参数指定：
+				- 按 Pull Request 编号，例如 "123"；或者
+				- 按会话 ID，例如 "12345abc-12345-12345-12345-12345abc"；或者
+				- 按 URL，例如 "https://github.com/OWNER/REPO/pull/123/agent-sessions/12345abc-12345-12345-12345-12345abc"；
 
-				Identifying tasks by pull request is not recommended for non-interactive use cases as
-				there may be multiple tasks for a given pull request that require disambiguation.
+				不建议在非交互式用例中通过 Pull Request 来标识任务，
+				因为给定的 Pull Request 可能有多个任务需要消歧。
 			`),
 		},
 		Example: heredoc.Doc(`

@@ -18,7 +18,7 @@ func newLogsCmd(app *App) *cobra.Command {
 
 	logsCmd := &cobra.Command{
 		Use:   "logs",
-		Short: "Access codespace logs",
+		Short: "访问 codespace 日志",
 		Args:  noArgsConstraint,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return app.Logs(cmd.Context(), selector, follow)

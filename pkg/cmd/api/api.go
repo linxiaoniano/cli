@@ -73,7 +73,7 @@ func NewCmdApi(f *cmdutil.Factory, runF func(*ApiOptions) error) *cobra.Command 
 
 	cmd := &cobra.Command{
 		Use:   "api <endpoint>",
-		Short: "Make an authenticated GitHub API request",
+		Short: "发送经过身份验证的 GitHub API 请求",
 		Long: heredoc.Docf(`
 			Makes an authenticated HTTP request to the GitHub API and prints the response.
 

@@ -34,7 +34,7 @@ func newCmdList(f *cmdutil.Factory, runF func(*listOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List labels in a repository",
+		Short: "列出仓库中的标签",
 		Long: heredoc.Docf(`
 			Display labels in a GitHub repository.
 

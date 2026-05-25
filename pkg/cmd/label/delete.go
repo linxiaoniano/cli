@@ -34,7 +34,7 @@ func newCmdDelete(f *cmdutil.Factory, runF func(*deleteOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "delete <name>",
-		Short: "Delete a label from a repository",
+		Short: "从仓库删除标签",
 		Args:  cmdutil.ExactArgs(1, "cannot delete label: name argument required"),
 		RunE: func(c *cobra.Command, args []string) error {
 			// support `-R, --repo` override

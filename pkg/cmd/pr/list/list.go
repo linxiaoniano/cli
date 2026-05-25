@@ -55,7 +55,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(*ListOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List pull requests in a repository",
+		Short: "列出仓库中的 Pull Request",
 		// TODO advancedIssueSearchCleanup
 		// Update the links and remove the mention at GHES 3.17 version.
 		Long: heredoc.Docf(`

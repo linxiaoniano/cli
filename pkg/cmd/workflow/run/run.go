@@ -56,7 +56,7 @@ func NewCmdRun(f *cmdutil.Factory, runF func(*RunOptions) error) *cobra.Command 
 
 	cmd := &cobra.Command{
 		Use:   "run [<workflow-id> | <workflow-name>]",
-		Short: "Run a workflow by creating a workflow_dispatch event",
+		Short: "通过创建 workflow_dispatch 事件来运行工作流",
 		Long: heredoc.Docf(`
 			Create a %[1]sworkflow_dispatch%[1]s event for a given workflow.
 

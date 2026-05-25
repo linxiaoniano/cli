@@ -28,8 +28,8 @@ import (
 func NewCmdRepo(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "repo <command>",
-		Short: "Manage repositories",
-		Long:  `Work with GitHub repositories.`,
+		Short: "管理仓库",
+		Long:  `处理 GitHub 仓库。`,
 		Example: heredoc.Doc(`
 			$ gh repo create
 			$ gh repo clone cli/cli
@@ -37,20 +37,20 @@ func NewCmdRepo(f *cmdutil.Factory) *cobra.Command {
 		`),
 		Annotations: map[string]string{
 			"help:arguments": heredoc.Doc(`
-				A repository can be supplied as an argument in any of the following formats:
+				仓库可以通过以下任意格式作为参数提供：
 				- "OWNER/REPO"
-				- by URL, e.g. "https://github.com/OWNER/REPO"
+				- 按 URL，例如 "https://github.com/OWNER/REPO"
 			`),
 		},
 		GroupID: "core",
 	}
 
-	cmdutil.AddGroup(cmd, "General commands",
+	cmdutil.AddGroup(cmd, "常用命令",
 		repoListCmd.NewCmdList(f, nil),
 		repoCreateCmd.NewCmdCreate(f, nil),
 	)
 
-	cmdutil.AddGroup(cmd, "Targeted commands",
+	cmdutil.AddGroup(cmd, "目标命令",
 		repoViewCmd.NewCmdView(f, nil),
 		repoCloneCmd.NewCmdClone(f, nil),
 		repoForkCmd.NewCmdFork(f, nil),

@@ -37,7 +37,7 @@ func NewCmdDelete(f *cmdutil.Factory, runF func(*DeleteOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "delete <secret-name>",
-		Short: "Delete secrets",
+		Short: "删除密钥",
 		Long: heredoc.Doc(`
 			Delete a secret on one of the following levels:
 			- repository (default): available to GitHub Actions runs, Agents sessions, or Dependabot in a repository

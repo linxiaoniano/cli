@@ -33,7 +33,7 @@ func NewCmdImport(f *cmdutil.Factory, runF func(*ImportOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "import [<filename> | -]",
-		Short: "Import aliases from a YAML file",
+		Short: "从 YAML 文件导入别名",
 		Long: heredoc.Docf(`
 			Import aliases from the contents of a YAML file.
 

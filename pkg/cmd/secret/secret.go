@@ -12,12 +12,11 @@ import (
 func NewCmdSecret(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "secret <command>",
-		Short: "Manage GitHub secrets",
+		Short: "管理 GitHub 密钥",
 		Long: heredoc.Docf(`
-			Secrets can be set at the repository, or organization level for use in
-			GitHub Actions, Agents, or Dependabot. User, organization, and repository secrets can be set for
-			use in GitHub Codespaces. Environment secrets can be set for use in
-			GitHub Actions. Run %[1]sgh help secret set%[1]s to learn how to get started.
+			密钥可以在仓库或组织级别设置，用于 GitHub Actions、Agent 或 Dependabot。
+			用户、组织和仓库密钥可以设置用于 GitHub Codespaces。环境密钥可以设置用于
+			GitHub Actions。运行 %[1]sgh help secret set%[1]s 以了解如何开始。
 		`, "`"),
 	}
 

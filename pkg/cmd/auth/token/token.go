@@ -28,7 +28,7 @@ func NewCmdToken(f *cmdutil.Factory, runF func(*TokenOptions) error) *cobra.Comm
 
 	cmd := &cobra.Command{
 		Use:   "token",
-		Short: "Print the authentication token gh uses for a hostname and account",
+		Short: "打印 gh 用于主机名和账户的身份验证令牌",
 		Long: heredoc.Docf(`
 			This command outputs the authentication token for an account on a given GitHub host.
 

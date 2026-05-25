@@ -136,7 +136,7 @@ func NewCmdLock(f *cmdutil.Factory, parentName string, runF func(string, *LockOp
 	}
 
 	c := alias[opts.ParentCmd]
-	short := fmt.Sprintf("Lock %s conversation", strings.ToLower(c.FullName))
+	short := fmt.Sprintf("锁定 %s 对话", strings.ToLower(c.FullName))
 
 	cmd := &cobra.Command{
 		Use:   "lock {<number> | <url>}",
@@ -181,7 +181,7 @@ func NewCmdUnlock(f *cmdutil.Factory, parentName string, runF func(string, *Lock
 	opts := &LockOptions{ParentCmd: parentName}
 
 	c := alias[opts.ParentCmd]
-	short := fmt.Sprintf("Unlock %s conversation", strings.ToLower(c.FullName))
+	short := fmt.Sprintf("解锁 %s 对话", strings.ToLower(c.FullName))
 
 	cmd := &cobra.Command{
 		Use:   "unlock {<number> | <url>}",

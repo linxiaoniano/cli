@@ -37,7 +37,7 @@ func NewCmdRevert(f *cmdutil.Factory, runF func(*RevertOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "revert {<number> | <url> | <branch>}",
-		Short: "Revert a pull request",
+		Short: "还原 Pull Request",
 		Args:  cmdutil.ExactArgs(1, "cannot revert pull request: number, url, or branch required"),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			opts.Finder = shared.NewFinder(f)

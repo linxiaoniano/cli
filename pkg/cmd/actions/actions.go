@@ -12,7 +12,7 @@ func NewCmdActions(f *cmdutil.Factory) *cobra.Command {
 
 	cmd := &cobra.Command{
 		Use:    "actions",
-		Short:  "Learn about working with GitHub Actions",
+		Short:  "了解如何使用 GitHub Actions",
 		Long:   actionsExplainer(cs),
 		Hidden: true,
 	}

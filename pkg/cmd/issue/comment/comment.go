@@ -26,7 +26,7 @@ func NewCmdComment(f *cmdutil.Factory, runF func(*prShared.CommentableOptions) e
 
 	cmd := &cobra.Command{
 		Use:   "comment {<number> | <url>}",
-		Short: "Add a comment to an issue",
+		Short: "为 Issue 添加评论",
 		Long: heredoc.Doc(`
 			Add a comment to a GitHub issue.
 

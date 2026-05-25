@@ -45,7 +45,7 @@ func NewCmdWatch(f *cmdutil.Factory, runF func(*WatchOptions) error) *cobra.Comm
 
 	cmd := &cobra.Command{
 		Use:   "watch <run-id>",
-		Short: "Watch a run until it completes, showing its progress",
+		Short: "监视运行直至完成，显示其进度",
 		Long: heredoc.Docf(`
 			Watch a run until it completes, showing its progress.
 

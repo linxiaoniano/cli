@@ -36,7 +36,7 @@ func NewCmdDisable(f *cmdutil.Factory, runF func(*DisableOptions) error) *cobra.
 
 	cmd := &cobra.Command{
 		Use:   "disable [<workflow-id> | <workflow-name>]",
-		Short: "Disable a workflow",
+		Short: "禁用工作流",
 		Long:  "Disable a workflow, preventing it from running or showing up when listing workflows.",
 		Args:  cobra.MaximumNArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {

@@ -28,13 +28,13 @@ import (
 func NewCmdProject(f *cmdutil.Factory) *cobra.Command {
 	var cmd = &cobra.Command{
 		Use:   "project <command>",
-		Short: "Work with GitHub Projects.",
+		Short: "使用 GitHub Projects。",
 		Long: heredoc.Docf(`
-			Work with GitHub Projects.
+			使用 GitHub Projects。
 
-			The minimum required scope for the token is: %[1]sproject%[1]s.
-			You can verify your token scope by running %[1]sgh auth status%[1]s and
-			add the %[1]sproject%[1]s scope by running %[1]sgh auth refresh -s project%[1]s.
+			令牌所需的最小作用域为：%[1]sproject%[1]s。
+			你可以运行 %[1]sgh auth status%[1]s 验证令牌作用域，
+			并运行 %[1]sgh auth refresh -s project%[1]s 添加 %[1]sproject%[1]s 作用域。
 		`, "`"),
 		Example: heredoc.Doc(`
 			$ gh project create --owner monalisa --title "Roadmap"

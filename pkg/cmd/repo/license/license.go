@@ -10,7 +10,7 @@ import (
 func NewCmdLicense(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "license <command>",
-		Short: "Explore repository licenses",
+		Short: "浏览仓库许可证",
 	}
 
 	cmd.AddCommand(cmdList.NewCmdList(f, nil))

@@ -57,7 +57,7 @@ func NewCmdList(f *cmdutil.Factory, runF func(*ListOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List secrets",
+		Short: "列出密钥",
 		Long: heredoc.Doc(`
 			List secrets on one of the following levels:
 			- repository (default): available to GitHub Actions runs, Agents sessions, or Dependabot in a repository

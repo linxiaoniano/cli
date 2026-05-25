@@ -36,7 +36,7 @@ func NewCmdRename(f *cmdutil.Factory, runf func(*RenameOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "rename {<id> | <url>} <old-filename> <new-filename>",
-		Short: "Rename a file in a gist",
+		Short: "重命名 Gist 中的文件",
 		Long:  heredoc.Doc(`Rename a file in the given gist ID / URL.`),
 		Args:  cobra.ExactArgs(3),
 		RunE: func(cmd *cobra.Command, args []string) error {

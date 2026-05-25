@@ -69,8 +69,8 @@ func NewCmdRoot(f *cmdutil.Factory, telemetry ghtelemetry.CommandRecorder, versi
 
 	cmd := &cobra.Command{
 		Use:   "gh <command> <subcommand> [flags]",
-		Short: "GitHub CLI",
-		Long:  `Work seamlessly with GitHub from the command line.`,
+		Short: "GitHub 命令行工具",
+		Long:  `在命令行中无缝使用 GitHub。`,
 		Example: heredoc.Doc(`
 			$ gh issue create
 			$ gh repo clone cli/cli
@@ -106,7 +106,7 @@ func NewCmdRoot(f *cmdutil.Factory, telemetry ghtelemetry.CommandRecorder, versi
 		cmd.SilenceUsage = true
 
 		// this --version flag is checked in rootHelpFunc
-		cmd.Flags().Bool("version", false, "Show gh version")
+		cmd.Flags().Bool("version", false, "显示 gh 版本")
 
 		cmd.SetHelpFunc(func(c *cobra.Command, args []string) {
 			rootHelpFunc(f, c, args)
@@ -119,15 +119,15 @@ func NewCmdRoot(f *cmdutil.Factory, telemetry ghtelemetry.CommandRecorder, versi
 
 	cmd.AddGroup(&cobra.Group{
 		ID:    "core",
-		Title: "Core commands",
+		Title: "核心命令",
 	})
 	cmd.AddGroup(&cobra.Group{
 		ID:    "actions",
-		Title: "GitHub Actions commands",
+		Title: "GitHub Actions 命令",
 	})
 	cmd.AddGroup(&cobra.Group{
 		ID:    "extension",
-		Title: "Extension commands",
+		Title: "扩展命令",
 	})
 
 	// Child commands

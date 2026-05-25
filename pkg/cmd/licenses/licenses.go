@@ -11,8 +11,8 @@ import (
 func NewCmdLicenses(f *cmdutil.Factory) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "licenses",
-		Short: "View third-party license information",
-		Long:  "View license information for third-party libraries used in this build of the GitHub CLI.",
+		Short: "查看第三方许可证信息",
+		Long:  "查看 GitHub CLI 此版本使用的第三方库的许可证信息。",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			io := f.IOStreams
 			if err := io.StartPager(); err == nil {

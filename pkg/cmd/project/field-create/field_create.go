@@ -38,7 +38,7 @@ type createProjectV2FieldMutation struct {
 func NewCmdCreateField(f *cmdutil.Factory, runF func(config createFieldConfig) error) *cobra.Command {
 	opts := createFieldOpts{}
 	createFieldCmd := &cobra.Command{
-		Short: "Create a field in a project",
+		Short: "在项目中创建字段",
 		Use:   "field-create [<number>]",
 		Example: heredoc.Doc(`
 			# Create a field in the current user's project "1"

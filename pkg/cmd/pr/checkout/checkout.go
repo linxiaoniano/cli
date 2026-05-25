@@ -47,7 +47,7 @@ func NewCmdCheckout(f *cmdutil.Factory, runF func(*CheckoutOptions) error) *cobr
 
 	cmd := &cobra.Command{
 		Use:   "checkout [<number> | <url> | <branch>]",
-		Short: "Check out a pull request in git",
+		Short: "在 git 中签出 Pull Request",
 		Example: heredoc.Doc(`
 			# Interactively select a PR from the 10 most recent to check out
 			$ gh pr checkout

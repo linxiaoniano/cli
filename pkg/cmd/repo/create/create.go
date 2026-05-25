@@ -79,7 +79,7 @@ func NewCmdCreate(f *cmdutil.Factory, runF func(*CreateOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "create [<name>]",
-		Short: "Create a new repository",
+		Short: "创建新仓库",
 		Long: heredoc.Docf(`
 			Create a new GitHub repository.
 

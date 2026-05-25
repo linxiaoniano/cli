@@ -32,7 +32,7 @@ func NewCmdAdd(f *cmdutil.Factory, runF func(*AddOptions) error) *cobra.Command 
 
 	cmd := &cobra.Command{
 		Use:   "add [<key-file>]",
-		Short: "Add an SSH key to your GitHub account",
+		Short: "向 GitHub 账户添加 SSH 密钥",
 		Args:  cobra.MaximumNArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if len(args) == 0 {

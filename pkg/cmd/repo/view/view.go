@@ -44,7 +44,7 @@ func NewCmdView(f *cmdutil.Factory, runF func(*ViewOptions) error) *cobra.Comman
 
 	cmd := &cobra.Command{
 		Use:   "view [<repository>]",
-		Short: "View a repository",
+		Short: "查看仓库",
 		Long: heredoc.Docf(`
 			Display the description and the README of a GitHub repository.
 

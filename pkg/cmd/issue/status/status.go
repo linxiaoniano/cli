@@ -33,7 +33,7 @@ func NewCmdStatus(f *cmdutil.Factory, runF func(*StatusOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "status",
-		Short: "Show status of relevant issues",
+		Short: "显示相关 Issue 的状态",
 		Args:  cmdutil.NoArgsQuoteReminder,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			// support `-R, --repo` override

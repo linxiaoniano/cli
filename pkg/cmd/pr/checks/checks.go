@@ -60,7 +60,7 @@ func NewCmdChecks(f *cmdutil.Factory, runF func(*ChecksOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "checks [<number> | <url> | <branch>]",
-		Short: "Show CI status for a single pull request",
+		Short: "显示单个 Pull Request 的 CI 状态",
 		Long: heredoc.Docf(`
 			Show CI status for a single pull request.
 

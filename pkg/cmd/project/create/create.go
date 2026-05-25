@@ -34,7 +34,7 @@ type createProjectMutation struct {
 func NewCmdCreate(f *cmdutil.Factory, runF func(config createConfig) error) *cobra.Command {
 	opts := createOpts{}
 	createCmd := &cobra.Command{
-		Short: "Create a project",
+		Short: "创建项目",
 		Use:   "create",
 		Example: heredoc.Doc(`
 			# Create a new project owned by login monalisa

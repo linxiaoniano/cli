@@ -31,7 +31,7 @@ func NewCmdSwitch(f *cmdutil.Factory, runF func(*SwitchOptions) error) *cobra.Co
 	cmd := &cobra.Command{
 		Use:   "switch",
 		Args:  cobra.ExactArgs(0),
-		Short: "Switch active GitHub account",
+		Short: "切换活动的 GitHub 账户",
 		Long: heredoc.Docf(`
 			Switch the active account for a GitHub host.
 

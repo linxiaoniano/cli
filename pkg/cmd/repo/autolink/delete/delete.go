@@ -37,7 +37,7 @@ func NewCmdDelete(f *cmdutil.Factory, runF func(*deleteOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "delete <id>",
-		Short: "Delete an autolink reference",
+		Short: "删除自动链接引用",
 		Long:  "Delete an autolink reference for a repository.",
 		Args:  cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {

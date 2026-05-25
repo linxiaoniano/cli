@@ -49,7 +49,7 @@ func NewCmdRename(f *cmdutil.Factory, runf func(*RenameOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "rename [<new-name>]",
-		Short: "Rename a repository",
+		Short: "重命名仓库",
 		Long: heredoc.Docf(`
 			Rename a GitHub repository.
 

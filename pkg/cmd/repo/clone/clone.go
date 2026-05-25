@@ -43,7 +43,7 @@ func NewCmdClone(f *cmdutil.Factory, runF func(*CloneOptions) error) *cobra.Comm
 
 		Use:   "clone <repository> [<directory>] [-- <gitflags>...]",
 		Args:  cmdutil.MinimumArgs(1, "cannot clone: repository argument required"),
-		Short: "Clone a repository locally",
+		Short: "在本地克隆仓库",
 		Long: heredoc.Docf(`
 			Clone a GitHub repository locally. Pass additional %[1]sgit clone%[1]s flags by listing
 			them after %[1]s--%[1]s.

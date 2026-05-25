@@ -98,7 +98,7 @@ func NewCmdPublish(f *cmdutil.Factory, runF func(*PublishOptions) error) *cobra.
 
 	cmd := &cobra.Command{
 		Use:   "publish [<directory>] [flags]",
-		Short: "Validate and publish skills to a GitHub repository (preview)",
+		Short: "验证并发布技能到 GitHub 仓库（预览）",
 		Long: heredoc.Docf(`
 			Validate a local repository's skills against the Agent Skills specification
 			and publish them by creating a GitHub release.

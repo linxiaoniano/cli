@@ -14,7 +14,7 @@ func NewCmdCompletion(io *iostreams.IOStreams) *cobra.Command {
 
 	cmd := &cobra.Command{
 		Use:   "completion -s <shell>",
-		Short: "Generate shell completion scripts",
+		Short: "生成 Shell 补全脚本",
 		Long: heredoc.Docf(`
 			Generate shell completion scripts for GitHub CLI commands.
 

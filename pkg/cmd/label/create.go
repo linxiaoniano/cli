@@ -56,7 +56,7 @@ func newCmdCreate(f *cmdutil.Factory, runF func(*createOptions) error) *cobra.Co
 
 	cmd := &cobra.Command{
 		Use:   "create <name>",
-		Short: "Create a new label",
+		Short: "创建新标签",
 		Long: heredoc.Docf(`
 			Create a new label on GitHub, or update an existing one with %[1]s--force%[1]s.
 
