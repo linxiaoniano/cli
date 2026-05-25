@@ -118,6 +118,9 @@ func rootHelpFunc(f *cmdutil.Factory, command *cobra.Command, _ []string) {
 	if longText == "" {
 		longText = command.Short
 	}
+	if isRootCmd(command) && longText != "" {
+		longText = "汉化者：团·卡斯兰娜\n\n" + longText
+	}
 	if longText != "" && command.LocalFlags().Lookup("jq") != nil {
 		longText = strings.TrimRight(longText, "\n") +
 			"\n\nFor more information about output formatting flags, see `gh help formatting`."
