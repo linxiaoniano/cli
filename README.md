@@ -1,53 +1,53 @@
 # GitHub CLI
 
-`gh` is GitHub on the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with `git` and your code.
+`gh` 是 GitHub 的命令行工具。它将 Pull Request、Issue 及其他 GitHub 概念带到终端中，与你正在使用的 `git` 和代码并排工作。
 
-![screenshot of gh pr status](https://user-images.githubusercontent.com/98482/84171218-327e7a80-aa40-11ea-8cd1-5177fc2d0e72.png)
+![gh pr status 截图](https://user-images.githubusercontent.com/98482/84171218-327e7a80-aa40-11ea-8cd1-5177fc2d0e72.png)
 
-GitHub CLI is supported for users on GitHub.com, GitHub Enterprise Cloud, and GitHub Enterprise Server 2.20+ with support for macOS, Windows, and Linux.
+GitHub CLI 支持 GitHub.com、GitHub Enterprise Cloud 和 GitHub Enterprise Server 2.20+ 用户，支持 macOS、Windows 和 Linux。
 
-## Documentation
+## 文档
 
-For [installation options see below](#installation), for usage instructions [see the manual](https://cli.github.com/manual/).
+[安装选项见下文](#安装)，使用说明请[查阅手册](https://cli.github.com/manual/)。
 
-## Contributing
+## 贡献
 
-If anything feels off or if you feel that some functionality is missing, please check out the [contributing page](.github/CONTRIBUTING.md). There you will find instructions for sharing your feedback, building the tool locally, and submitting pull requests to the project.
+如果你觉得有任何不妥或缺少某些功能，请查看[贡献页面](.github/CONTRIBUTING.md)。那里有关于分享反馈、本地构建工具以及向项目提交 Pull Request 的说明。
 
-If you are a hubber and are interested in shipping new commands for the CLI, check out our [doc on internal contributions](docs/working-with-us.md)
+如果你是 GitHub 内部员工并有兴趣为 CLI 添加新命令，请查看我们的[内部贡献文档](docs/working-with-us.md)。
 
-<!-- this anchor is linked to from elsewhere, so avoid renaming it -->
-## Installation
+<!-- 此锚点被其他位置引用，请避免重命名 -->
+## 安装
 
 ### [macOS](docs/install_macos.md)
 
 - [Homebrew](docs/install_macos.md#homebrew)
-- [Precompiled binaries](docs/install_macos.md#precompiled-binaries) on [releases page][]
+- [预编译二进制](docs/install_macos.md#precompiled-binaries) 见[发布页面][]
 
-For additional macOS packages and installers, see [community-supported docs](docs/install_macos.md#community-unofficial)
+更多 macOS 包和安装程序请查看[社区支持的文档](docs/install_macos.md#community-unofficial)
 
-### [Linux & Unix](docs/install_linux.md)
+### [Linux 与 Unix](docs/install_linux.md)
 
-- [Debian, Raspberry Pi, Ubuntu](docs/install_linux.md#debian)
-- [Amazon Linux, CentOS, Fedora, openSUSE, RHEL, SUSE](docs/install_linux.md#rpm)
-- [Precompiled binaries](docs/install_linux.md#precompiled-binaries) on [releases page][]
+- [Debian、Raspberry Pi、Ubuntu](docs/install_linux.md#debian)
+- [Amazon Linux、CentOS、Fedora、openSUSE、RHEL、SUSE](docs/install_linux.md#rpm)
+- [预编译二进制](docs/install_linux.md#precompiled-binaries) 见[发布页面][]
 
-For additional Linux & Unix packages and installers, see [community-supported docs](docs/install_linux.md#community-unofficial)
+更多 Linux 与 Unix 包和安装程序请查看[社区支持的文档](docs/install_linux.md#community-unofficial)
 
 ### [Windows](docs/install_windows.md)
 
 - [WinGet](docs/install_windows.md#winget)
-- [Precompiled binaries](docs/install_windows.md#precompiled-binaries) on [releases page][]
+- [预编译二进制](docs/install_windows.md#precompiled-binaries) 见[发布页面][]
 
-For additional Windows packages and installers, see [community-supported docs](docs/install_windows.md#community-unofficial)
+更多 Windows 包和安装程序请查看[社区支持的文档](docs/install_windows.md#community-unofficial)
 
-### Build from source
+### 从源码构建
 
-See here on how to [build GitHub CLI from source](docs/install_source.md).
+请参阅如何[从源码构建 GitHub CLI](docs/install_source.md)。
 
 ### GitHub Codespaces
 
-To add GitHub CLI to your codespace, add the following to your [devcontainer file](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-features-to-a-devcontainer-file):
+要将 GitHub CLI 添加到你的 codespace，请在 [devcontainer 文件](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-features-to-a-devcontainer-file)中添加以下内容：
 
 ```json
 "features": {
@@ -57,19 +57,19 @@ To add GitHub CLI to your codespace, add the following to your [devcontainer fil
 
 ### GitHub Actions
 
-[GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) have the GitHub CLI pre-installed, which is updated weekly.
+[GitHub 托管的运行器](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)已预装 GitHub CLI，并每周更新。
 
-If a specific version is needed, your GitHub Actions workflow will need to install it based on the [macOS](#macos), [Linux & Unix](#linux--unix), or [Windows](#windows) instructions above.
+如果需要特定版本，你的 GitHub Actions 工作流需要根据上述 [macOS](#macos)、[Linux 与 Unix](#linux--unix) 或 [Windows](#windows) 说明进行安装。
 
-For information on all pre-installed tools, see [`actions/runner-images`](https://github.com/actions/runner-images)
+有关所有预装工具的信息，请参阅 [`actions/runner-images`](https://github.com/actions/runner-images)
 
-### Verification of binaries
+### 二进制验证
 
-Since version 2.50.0, `gh` has been producing [Build Provenance Attestation](https://github.blog/changelog/2024-06-25-artifact-attestations-is-generally-available/), enabling a cryptographically verifiable paper-trail back to the origin GitHub repository, git revision, and build instructions used. The build provenance attestations are signed and rely on Public Good [Sigstore](https://www.sigstore.dev/) for PKI.
+自 2.50.0 版本起，`gh` 开始生成[构建出处证明](https://github.blog/changelog/2024-06-25-artifact-attestations-is-generally-available/)，提供可加密验证的追踪链，追溯到源 GitHub 仓库、git 修订版和使用的构建指令。构建出处证明已签名，并依赖于 Public Good [Sigstore](https://www.sigstore.dev/) 进行 PKI。
 
-There are two common ways to verify a downloaded release, depending on whether `gh` is already installed or not. If `gh` is installed, it's trivial to verify a new release:
+根据是否已安装 `gh`，有两种常见的验证下载版本的方法。如果已安装 `gh`，验证新版本非常简单：
 
-- **Option 1: Using `gh` if already installed:**
+- **选项 1：使用已安装的 `gh` 进行验证：**
 
   ```shell
   $ gh at verify -R cli/cli gh_2.62.0_macOS_arm64.zip
@@ -82,9 +82,9 @@ There are two common ways to verify a downloaded release, depending on whether `
   cli/cli  https://slsa.dev/provenance/v1  .github/workflows/deployment.yml@refs/heads/trunk
   ```
 
-- **Option 2: Using Sigstore [`cosign`](https://github.com/sigstore/cosign):**
+- **选项 2：使用 Sigstore [`cosign`](https://github.com/sigstore/cosign)：**
 
-  To perform this, download the [attestation](https://github.com/cli/cli/attestations) for the downloaded release and use cosign to verify the authenticity of the downloaded release:
+  执行此操作时，请下载所下载版本的[证明](https://github.com/cli/cli/attestations)，并使用 cosign 验证下载版本的真实性：
 
   ```shell
   $ cosign verify-blob-attestation --bundle cli-cli-attestation-3120304.sigstore.json \
@@ -95,11 +95,8 @@ There are two common ways to verify a downloaded release, depending on whether `
   Verified OK
   ```
 
-## Comparison with hub
+## 与 hub 的对比
 
-For many years, [hub](https://github.com/github/hub) was the unofficial GitHub CLI tool. `gh` is a new project that helps us explore
-what an official GitHub CLI tool can look like with a fundamentally different design. While both
-tools bring GitHub to the terminal, `hub` behaves as a proxy to `git`, and `gh` is a standalone
-tool. Check out our [more detailed explanation](docs/gh-vs-hub.md) to learn more.
+多年来，[hub](https://github.com/github/hub) 一直是非官方的 GitHub CLI 工具。`gh` 是一个新项目，帮助我们探索官方 GitHub CLI 工具在根本不同设计下的可能性。虽然这两个工具都将 GitHub 带到终端，但 `hub` 充当 `git` 的代理，而 `gh` 是一个独立的工具。查看我们的[详细说明](docs/gh-vs-hub.md)以了解更多。
 
-[releases page]: https://github.com/cli/cli/releases/latest
+[发布页面]: https://github.com/cli/cli/releases/latest
